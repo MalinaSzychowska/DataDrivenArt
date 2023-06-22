@@ -1,0 +1,50 @@
+---
+title: "Data visualisation in R"
+author: "Malina Szychowska"
+date: "`r Sys.Date()`"
+output: 
+  html_document:
+    code_folding: hide
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Introduction
+
+I really enjoy visualizing data. I think that well chosen plot can tell more about the results than gianormous tables with rows and rows of number that make you dizzy. 
+I like to plan the properties of the figures, so that they are easily understandable, self explanatory, accessible (e.g., for readers with colorblindness), and aesthetically pleasing. 
+
+In this document you can find examples of different data visualisations I have prepared for different projects, and also visualizations of simulated data, just for the sake of showing off nice figures :) .
+
+```{r import_datasets, message = FALSE, error = FALSE, warning = FALSE}
+
+```
+
+## Project 1. Sensory spatial memory {.tabset}
+
+In this project I was comparing people performance on spatial memory game, when the task was to remember location of smells versus location of sounds. 
+
+In short, participants first learned locations of smell and sound objects within a virtual reality arena that looked like a garden. Then they were asked to recall these locations at 3 occasions: 
+
+1. Immediately after memorizing the locations in each condition.
+
+2. After 15 minutes break.
+
+3. After one week break.
+
+First, I could look into individual data, and visualize: 
+
+### Original and recalled locations 
+
+```{r pressure}
+plot(pressure)
+```
+
+### Walking paths from the start position to the recalled location
+
+```{r pressure2}
+plot(pressure)
+```
+
